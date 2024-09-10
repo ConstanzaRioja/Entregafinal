@@ -1,0 +1,53 @@
+
+
+header{
+    @include header;
+}
+
+main{
+    margin: 0px 30px;
+    display: grid;
+    align-content: center;
+    row-gap: 10px;
+    h1{
+        text-align: center;
+    }
+    form{
+        fieldset{
+            legend{
+                font-style: italic;
+                font-size: larger;
+            }
+            div{
+                margin: 10px;
+                display: grid;
+                align-content: center;
+            }
+        .mensaje{
+            display: flex;
+            flex-direction: column;
+        }
+        .boton{
+            display: flex;
+            justify-content: left;
+            gap: 10px;
+        }
+        }   
+
+    }
+}
+
+footer{
+    @include footer;
+    
+    .buttom{
+        margin-top: 30px;
+        color: $color-white;
+        display: grid;
+        align-content:end;
+        animation: bounceIn;
+        animation-duration: 5s;
+    }
+}
+
+

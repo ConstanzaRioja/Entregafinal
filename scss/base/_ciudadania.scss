@@ -1,0 +1,60 @@
+
+
+header{
+    @include header;
+}
+
+main{
+    margin: 0px 30px;
+    display: grid;
+    align-content: center;
+    row-gap: 10px;
+    h1{
+        text-align: center;
+        }
+    h2{
+        @extend h1;
+    }
+    h3{
+        @extend h1
+    }
+    p{
+        margin-top: 20px;
+        color: $color-white;
+    }
+    .animate_animated{
+        display: inline-block;
+        margin: 0 0.5rem;animation: flipInX;
+        animation-duration: 2s;
+        list-style: none;
+
+    }
+    div{
+        .img-pasaporte{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+footer{
+    @include footer;
+    
+    .buttom{
+        margin-top: 30px;
+        color: $color-white;
+        border: $color-white;
+        display: grid;
+        align-content:end;
+        animation: bounceIn;
+        animation-duration: 5s
+    }
+}
+
+
+
